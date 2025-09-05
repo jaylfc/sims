@@ -1,17 +1,19 @@
 import fs from "fs";
 import pathfinding from "pathfinding";
+import http from "http";
 import { Server } from "socket.io";
 
 const origin = process.env.CLIENT_URL || "http://localhost:5173";
-const io = new Server({
+const server = http.createServer();
+const io = new Server(server, {
   cors: {
     origin,
   },
 });
 
-io.listen(3000);
-
-console.log("Server started on port 3000, allowed cors origin: " + origin);
+server.listen(3000, "0.0.0.0", () => {
+  console.log("Server started on port 3000, allowed cors origin: " + origin);
+});
 
 // PATHFINDING UTILS
 
