@@ -96,24 +96,21 @@ export const Lobby = () => {
           <div
             className={`${
               isSafari
-                ? "w-[310px] h-[416px] lg:w-[390px] lg:h-[514px]"
+                ? "w-[310px] h-[416px] lg:w-[390px] lg:h-[414px]"
                 : "w-[390px] h-[514px]"
             }  max-w-full  overflow-y-auto p-5  place-items-center pointer-events-none select-none`}
           >
-            <div className="w-full overflow-y-auto flex flex-col space-y-2">
+            <div className="w-full overflow-y-auto flex flex-col space-y-2 px-2">
               <h1 className="text-center text-white text-2xl font-bold">
-                Vippy.me
+                Choose a Department
               </h1>
-              <p className="text-center text-white">
-                Please select a room
-              </p>
               {rooms.map((room) => (
                 <div
                   key={room.id}
-                  className="p-4 rounded-lg bg-slate-800 bg-opacity-70 text-white hover:bg-slate-950 transition-colors cursor-pointer pointer-events-auto"
+                  className="w-[70%] mx-auto p-3 rounded-lg bg-slate-800 bg-opacity-70 text-white text-center hover:bg-slate-950 transition-colors cursor-pointer pointer-events-auto"
                   onClick={() => joinRoom(room.id)}
                 >
-                  <p className="text-uppercase font-bold text-lg">
+                  <p className="text-uppercase font-bold text-lg truncate">
                     {room.name}
                   </p>
                   <div className="flex items-center gap-2">
@@ -122,7 +119,7 @@ export const Lobby = () => {
                         room.nbCharacters > 0 ? "bg-green-500" : "bg-orange-500"
                       }`}
                     ></div>
-                    {room.nbCharacters} people in this room
+                    <span className="text-sm">{room.nbCharacters} people in this room</span>
                   </div>
                 </div>
               ))}
