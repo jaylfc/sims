@@ -102,12 +102,10 @@ export const Lobby = () => {
           >
             <div className="w-full overflow-y-auto flex flex-col space-y-2">
               <h1 className="text-center text-white text-2xl font-bold">
-                WELCOME TO
-                <br />
-                WAWA MANSION
+                Vippy.me
               </h1>
               <p className="text-center text-white">
-                Please select a room to relax
+                Please select a room
               </p>
               {rooms.map((room) => (
                 <div
@@ -144,22 +142,7 @@ export const Lobby = () => {
           bevelThickness={0.005}
           letterSpacing={0.012}
         >
-          MANSION
-          <meshStandardMaterial color="white" />
-        </Text3D>
-
-        <Text3D
-          font={"fonts/Inter_Bold.json"}
-          position-z={2.5}
-          size={0.3}
-          position-x={-3}
-          castShadow
-          rotation-y={Math.PI / 8}
-          bevelEnabled
-          bevelThickness={0.005}
-          letterSpacing={0.012}
-        >
-          WAWA
+          VIPPY.ME
           <meshStandardMaterial color="white" />
         </Text3D>
         <Skyscraper scale={1.32} />

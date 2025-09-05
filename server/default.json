@@ -1,8 +1,8 @@
 [
   {
     "id": 1,
-    "name": "PARTY ROOM",
-    "password": "WAWA",
+    "name": "Sales",
+    "password": "vippy",
     "items": [
       {
         "name": "loungeSofaCorner",
@@ -105,8 +105,8 @@
   },
   {
     "id": 2,
-    "name": "BATHROOM",
-    "password": "WAWA",
+    "name": "Customer Service",
+    "password": "vippy",
     "items": [
       {
         "name": "washer",
@@ -212,8 +212,8 @@
   },
   {
     "id": 3,
-    "name": "KITCHEN",
-    "password": "WAWA",
+    "name": "Finance",
+    "password": "vippy",
     "items": [
       {
         "name": "plant",
@@ -346,8 +346,8 @@
   },
   {
     "id": 4,
-    "name": "COSY ROOM",
-    "password": "WAWA",
+    "name": "Social Media",
+    "password": "vippy",
     "items": [
       {
         "name": "tableCoffee",
